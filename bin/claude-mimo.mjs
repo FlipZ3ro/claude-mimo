@@ -390,8 +390,9 @@ function usage() {
     claude-mimo use mimo-swe
 
   ${C.bold}Install:${C.reset}
-    npm install -g claude-mimo
-    # or one-off:  npx claude-mimo setup
+    npm install -g github:FlipZ3ro/claude-mimo
+    # one-off, no install:
+    npx github:FlipZ3ro/claude-mimo setup
 `);
 }
 
