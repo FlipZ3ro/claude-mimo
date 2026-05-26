@@ -1,0 +1,39 @@
+{
+  "name": "claude-mimo",
+  "version": "0.1.0",
+  "description": "One-shot CLI that points Claude Code at a Xiaomi MiMo endpoint, with per-account profile switching.",
+  "type": "module",
+  "bin": {
+    "claude-mimo": "./bin/claude-mimo.mjs"
+  },
+  "files": [
+    "bin",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node bin/claude-mimo.mjs --help"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "anthropic",
+    "mimo",
+    "xiaomi-mimo",
+    "cli",
+    "llm",
+    "developer-tools"
+  ],
+  "author": "FlipZ3ro",
+  "license": "MIT",
+  "homepage": "https://github.com/FlipZ3ro/claude-mimo#readme",
+  "bugs": "https://github.com/FlipZ3ro/claude-mimo/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlipZ3ro/claude-mimo.git"
+  },
+  "preferGlobal": true
+}
