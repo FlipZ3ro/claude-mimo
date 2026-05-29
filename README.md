@@ -2,9 +2,10 @@
 
 > One-shot CLI that installs **Claude Code** and points it at the **Xiaomi MiMo** Anthropic-compatible endpoint — with per-account profile switching.
 
+[![npm](https://img.shields.io/npm/v/claude-mimo.svg)](https://www.npmjs.com/package/claude-mimo)
 [![node](https://img.shields.io/badge/node-18+-brightgreen.svg)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![GitHub](https://img.shields.io/badge/install-github-181717.svg?logo=github)](https://github.com/FlipZ3ro/claude-mimo)
+[![CI](https://github.com/FlipZ3ro/claude-mimo/actions/workflows/ci.yml/badge.svg)](https://github.com/FlipZ3ro/claude-mimo/actions/workflows/ci.yml)
 
 Setting up Claude Code against a MiMo endpoint takes 4 manual steps: install the CLI, find the right env vars, locate `~/.claude/settings.json`, edit two JSON files. If you have multiple MiMo accounts (one per project) you do this dance every time you switch.
 
@@ -12,24 +13,14 @@ Setting up Claude Code against a MiMo endpoint takes 4 manual steps: install the
 
 ## Install
 
-Install directly from GitHub (no npm registry account needed):
-
 ```bash
-npm install -g github:FlipZ3ro/claude-mimo
+npm install -g claude-mimo
 ```
 
 Or run it once without installing:
 
 ```bash
-npx github:FlipZ3ro/claude-mimo setup
-```
-
-Or clone manually:
-
-```bash
-git clone https://github.com/FlipZ3ro/claude-mimo
-cd claude-mimo
-node bin/claude-mimo.mjs setup
+npx claude-mimo setup
 ```
 
 > Requires Node.js 18+.
