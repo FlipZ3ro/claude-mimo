@@ -2,10 +2,14 @@
 
 > One-shot CLI that installs **Claude Code** and points it at the **Xiaomi MiMo** Anthropic-compatible endpoint — with per-account profile switching.
 
-[![npm](https://img.shields.io/npm/v/claude-mimo.svg)](https://www.npmjs.com/package/claude-mimo)
-[![node](https://img.shields.io/badge/node-18+-brightgreen.svg)](https://nodejs.org/)
+[![npm version](https://img.shields.io/npm/v/claude-mimo.svg?logo=npm&color=cb3837)](https://www.npmjs.com/package/claude-mimo)
+[![npm downloads](https://img.shields.io/npm/dm/claude-mimo.svg?logo=npm&color=cb3837)](https://www.npmjs.com/package/claude-mimo)
+[![install size](https://img.shields.io/badge/install_size-22.3_kB-blue.svg)](https://www.npmjs.com/package/claude-mimo)
+[![node](https://img.shields.io/badge/node-18+-brightgreen.svg?logo=node.js)](https://nodejs.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![CI](https://github.com/FlipZ3ro/claude-mimo/actions/workflows/ci.yml/badge.svg)](https://github.com/FlipZ3ro/claude-mimo/actions/workflows/ci.yml)
+
+📦 **npm**: [npmjs.com/package/claude-mimo](https://www.npmjs.com/package/claude-mimo) &nbsp;·&nbsp; 💻 **source**: [github.com/FlipZ3ro/claude-mimo](https://github.com/FlipZ3ro/claude-mimo)
 
 Setting up Claude Code against a MiMo endpoint takes 4 manual steps: install the CLI, find the right env vars, locate `~/.claude/settings.json`, edit two JSON files. If you have multiple MiMo accounts (one per project) you do this dance every time you switch.
 
