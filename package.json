@@ -4,7 +4,7 @@
   "description": "One-shot CLI that points Claude Code at a Xiaomi MiMo endpoint, with per-account profile switching.",
   "type": "module",
   "bin": {
-    "claude-mimo": "./bin/claude-mimo.mjs"
+    "claude-mimo": "bin/claude-mimo.mjs"
   },
   "files": [
     "bin",
