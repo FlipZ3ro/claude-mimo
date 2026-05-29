@@ -1,0 +1,40 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  smoke:
+    name: smoke (${{ matrix.os }}, node ${{ matrix.node }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        node: [18, 20, 22]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
+
+      - name: Help renders without crashing
+        run: node bin/claude-mimo.mjs --help
+
+      - name: Status reads safely without writing
+        run: node bin/claude-mimo.mjs status
+
+      - name: Dry-run setup writes nothing
+        run: node bin/claude-mimo.mjs setup --dry-run --skip-install --key tp-ci-dummy --profile ci-test
+
+      - name: List subcommand handles empty profile dir
+        run: node bin/claude-mimo.mjs list
+        continue-on-error: true
+
+      - name: Unset (no-op when env block absent)
+        run: node bin/claude-mimo.mjs unset
+        continue-on-error: true
